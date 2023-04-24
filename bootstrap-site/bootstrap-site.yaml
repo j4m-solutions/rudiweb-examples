@@ -1,0 +1,17 @@
+#site-root: /home/<user>/tmp/rudiweb-examples/bootstrap-site
+
+host: localhost
+port: 8081
+
+index-files:
+  - index.html
+  - index.htm
+
+require-authorization: false
+create-ephemeral-account: false
+
+content:
+  asis:
+    regexps:
+      - "^/asis/.*"
+      - "/favicon\\.ico$"
